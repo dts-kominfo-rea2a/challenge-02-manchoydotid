@@ -23,16 +23,14 @@ function lakukanLooping(arrPegawai) {
 
       Contoh: ["Aisyah Nirmala", "Mansur Faisal", ...]
   */
-  let hasilLooping = null;
+  let hasilLooping = [];
   for (let index = 0; index < dataYangAkanDilooping.length; index++) {
     let namaDepan = dataYangAkanDilooping[index].namaDepan;
     let namaBelakang = dataYangAkanDilooping[index].namaBelakang;
     let namaLengkap = namaDepan + " " + namaBelakang;
-    hasilLooping = [];
     hasilLooping.push(namaLengkap);
-    console.log(hasilLooping);
-    // console.log(dataYangAkanDilooping.length);
   }
+
   /*
     TODO 2: Buatlah sebuah variabel bernama "jumlahPria"
       yang berisi jumlah pria dari masing masing pegawai
@@ -43,7 +41,6 @@ function lakukanLooping(arrPegawai) {
       jumlahPria += 1;
     }
   }
-  console.log(jumlahPria);
 
   /*
     TODO 3: Buatlah sebuah variabel bernama "jumlahWanita"
@@ -55,7 +52,6 @@ function lakukanLooping(arrPegawai) {
       jumlahWanita += 1;
     }
   }
-  console.log(jumlahWanita);
 
   /*
     TODO 4: Buatlah sebuah variabel bernama "komentar"
@@ -76,7 +72,6 @@ function lakukanLooping(arrPegawai) {
   } else {
     komentar = "Jumlah Pria dan Wanita berimbang";
   }
-  console.log(komentar);
 
   // ! JANGAN DIMODIFIKASI
   return {
